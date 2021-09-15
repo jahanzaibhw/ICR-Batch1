@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
 import { Text, View, TextInput, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { connect } from 'react-redux'
 import Routes from '../data/remote/Routes'
 import WebHandler from '../data/remote/WebHandler'
 
-export default class Create extends Component {
+import LightTheme from '../assets/theme/light.json'
+import DarkTheme from '../assets/theme/dark.json'
+
+import ReducersProps from '../data/local/reducers/ReducersProps'
+import ReducersActions from '../data/local/reducers/ReducersActions'
+
+class Create extends Component {
 
     state = {
         name: "",
@@ -15,8 +22,12 @@ export default class Create extends Component {
 
     render() {
         const { name, salary, age, isLoading } = this.state
+        const { theme } = this.props
         return (
-            <View style={{ flex: 1, padding: 10, justifyContent: "center" }}>
+            <View style={{
+                flex: 1, padding: 10, justifyContent: "center",
+                backgroundColor: theme.background
+            }}>
 
                 <View style={{ padding: 10 }}>
 
@@ -52,6 +63,20 @@ export default class Create extends Component {
                             </Text>
                         </TouchableOpacity>
                     }
+
+                    <TouchableOpacity style={{ ...styles.btnBG }}
+                        onPress={() => this.props.themeReducer(LightTheme)}>
+                        <Text style={{ color: "#fff" }}>
+                            {"Light Theme"}
+                        </Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={{ ...styles.btnBG }}
+                        onPress={() => this.props.themeReducer(DarkTheme)}>
+                        <Text style={{ color: "#fff" }}>
+                            {"Dark Theme"}
+                        </Text>
+                    </TouchableOpacity>
 
                 </View>
 
@@ -92,3 +117,5 @@ const styles = StyleSheet.create({
         alignItems: "center"
     }
 })
+
+export default connect(ReducersProps, ReducersActions)(Create)

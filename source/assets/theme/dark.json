@@ -1,0 +1,17 @@
+{
+    "mode": "dark",
+    "background": "#202129",
+    "secondaryBG": "#33343E",
+    "iconsBG": "#C4C4C4",
+    "dimBackground": "#32333d",
+    "text": "#fff",
+    "dimText": "#C4C4C4",
+    "borderColor": "#3f4753",
+    "secondaryText": "#8F8F8F",
+    "content": "light-content",
+    "linkColor": "#b38df7",
+    "btnBGColor": "#0CBE34",
+    "btnTextColor": "#FFFFFF",
+    "bottomNavColor": "#353535",
+    "errorColor": "red"
+}
