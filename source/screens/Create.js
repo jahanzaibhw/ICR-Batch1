@@ -9,7 +9,9 @@ import DarkTheme from '../assets/theme/dark.json'
 
 import ReducersProps from '../data/local/reducers/ReducersProps'
 import ReducersActions from '../data/local/reducers/ReducersActions'
+import PrefManager from '../data/local/PrefManager'
 
+const prefs = new PrefManager()
 class Create extends Component {
 
     state = {
@@ -18,6 +20,12 @@ class Create extends Component {
         age: "",
 
         isLoading: false
+    }
+
+    componentDidMount() {
+        prefs.getTheme((theme) => {
+            this.props.themeReducer(theme)
+        })
     }
 
     render() {
@@ -65,14 +73,14 @@ class Create extends Component {
                     }
 
                     <TouchableOpacity style={{ ...styles.btnBG }}
-                        onPress={() => this.props.themeReducer(LightTheme)}>
+                        onPress={() => this.activeTheme(LightTheme)}>
                         <Text style={{ color: "#fff" }}>
                             {"Light Theme"}
                         </Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={{ ...styles.btnBG }}
-                        onPress={() => this.props.themeReducer(DarkTheme)}>
+                        onPress={() => this.activeTheme(DarkTheme)}>
                         <Text style={{ color: "#fff" }}>
                             {"Dark Theme"}
                         </Text>
@@ -104,6 +112,12 @@ class Create extends Component {
             alert("error")
             this.setState({ isLoading: false })
         })
+    }
+
+    activeTheme(theme) {
+        this.props.themeReducer(theme)
+
+        prefs.setTheme(theme)
     }
 }
 
