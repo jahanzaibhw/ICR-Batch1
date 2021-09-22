@@ -16,6 +16,7 @@
     "react-native": "0.64.2",
     "react-native-geolocation-service": "*",
     "react-native-maps": "^0.28.0",
+    "react-native-onesignal": "^4.3.0",
     "react-native-permissions": "^3.0.5",
     "react-redux": "^7.2.5",
     "redux": "^4.1.1"

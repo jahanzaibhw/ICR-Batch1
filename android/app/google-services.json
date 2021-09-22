@@ -1,0 +1,263 @@
+{
+  "project_info": {
+    "project_number": "433696591781",
+    "firebase_url": "https://testproject-6323c.firebaseio.com",
+    "project_id": "testproject-6323c",
+    "storage_bucket": "testproject-6323c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:e6639239086748a755e24c",
+        "android_client_info": {
+          "package_name": "com.armsonline.safteyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:2958e34027779c8955e24c",
+        "android_client_info": {
+          "package_name": "com.batchno1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:a25ac418135b006e55e24c",
+        "android_client_info": {
+          "package_name": "com.lantix.eqsmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:9899f6265a3e4dec55e24c",
+        "android_client_info": {
+          "package_name": "com.lantix.eqsmart2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:44bd1e9459b9a2f2",
+        "android_client_info": {
+          "package_name": "com.qaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:7e782b33865caa7d",
+        "android_client_info": {
+          "package_name": "com.qaproject.lantix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433696591781:android:a677f035fb446441",
+        "android_client_info": {
+          "package_name": "com.qaproject.vff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhCxlNzNPJ1NHjjXzkWSHdvoSHO5WcvR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433696591781-qn2sp2on6q5o4g2e5airq6l9lofi1tu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433696591781-3n4aisn2ib878u9eu4ub3r025rb24ddk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.armsonline.safteyapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

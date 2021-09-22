@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TextInput, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { Text, View, TextInput, StyleSheet, TouchableOpacity, ActivityIndicator, Switch } from 'react-native'
 import { connect } from 'react-redux'
 import Routes from '../data/remote/Routes'
 import WebHandler from '../data/remote/WebHandler'
@@ -10,6 +10,7 @@ import DarkTheme from '../assets/theme/dark.json'
 import ReducersProps from '../data/local/reducers/ReducersProps'
 import ReducersActions from '../data/local/reducers/ReducersActions'
 import PrefManager from '../data/local/PrefManager'
+import PNHelper from '../utils/PNHelper'
 
 const prefs = new PrefManager()
 class Create extends Component {
@@ -19,17 +20,28 @@ class Create extends Component {
         salary: "",
         age: "",
 
-        isLoading: false
+        isLoading: false,
+
+        isDarkMode: true
     }
 
     componentDidMount() {
         prefs.getTheme((theme) => {
             this.props.themeReducer(theme)
         })
+
+        const notiHandler = new PNHelper()
+        notiHandler.init()
+        notiHandler.loadDeviceInfo((devInfo) => {
+            console.log(devInfo)
+        })
+        notiHandler.setOnNewNotificationListener((message) => {
+            console.log(message)
+        })
     }
 
     render() {
-        const { name, salary, age, isLoading } = this.state
+        const { name, salary, age, isLoading, isDarkMode } = this.state
         const { theme } = this.props
         return (
             <View style={{
@@ -58,6 +70,18 @@ class Create extends Component {
                         placeholder={"Age"}
                         value={age}
                         onChangeText={(text) => { this.setState({ age: text }) }}
+                    />
+
+                    <Switch
+                        value={isDarkMode}
+                        onChange={() => {
+                            if (isDarkMode) {
+                                this.activeTheme(LightTheme)
+                            } else {
+                                this.activeTheme(DarkTheme)
+                            }
+                            this.setState({ isDarkMode: !isDarkMode })
+                        }}
                     />
 
                     {isLoading &&
