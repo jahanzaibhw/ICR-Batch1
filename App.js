@@ -28,10 +28,10 @@ export default class App extends Component {
 
         <View style={{ flex: 1 }}>
           {/* <Create ref={ref => this.createRef = ref} /> */}
-          {/* <MapScreen /> */}
+          <MapScreen />
           {/* <Create /> */}
 
-          <MapAdvance />
+          {/* <MapAdvance /> */}
 
         </View>
       </Provider>

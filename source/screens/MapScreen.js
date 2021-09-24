@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import { check, request, checkMultiple, requestMultiple, PERMISSIONS, RESULTS } from 'react-native-permissions'
-import GeoLocation from 'react-native-geolocation-service'
+import GeoLocation, { clearWatch } from 'react-native-geolocation-service'
+import FBDBHelper from '../data/remote/FBDBHelper';
 
 const LAT_DELTA = 0.0015, LNG_DELTA = 0.0021
 
+const fbHelper = new FBDBHelper()
 export default class MapScreen extends Component {
 
     state = {
@@ -26,7 +28,10 @@ export default class MapScreen extends Component {
                         latitudeDelta: LAT_DELTA,
                         longitudeDelta: LNG_DELTA,
                     }}
-                    onMapReady={() => { this.loadCurrentLocation() }}
+                    onMapReady={() => {
+                        //this.loadCurrentLocation() 
+                        this.startTracking()
+                    }}
                 >
                     <Marker
                         title={"Me"}
@@ -91,5 +96,32 @@ export default class MapScreen extends Component {
             }
         })
 
+    }
+
+    startTracking() {
+        this.checkForLocationPermission((isAllowed) => {
+            if (isAllowed) {
+                this.locationListner = GeoLocation.watchPosition((position) => {
+                    this.setState({
+                        currentLat: position.coords.latitude,
+                        currentLng: position.coords.longitude,
+                    })
+                    fbHelper.updateLocToDB(1,
+                        position.coords.latitude,
+                        position.coords.longitude)
+                }, (error) => {
+                    console.log(error)
+                }, { enableHighAccuracy: true })
+            } else {
+                console.log("permission not allowed")
+            }
+        })
+
+    }
+
+    stopTracking() {
+        if (this.locationListner) {
+            clearWatch(this.locationListner)
+        }
     }
 }
