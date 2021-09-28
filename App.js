@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import MyReducers from './source/data/local/reducers/MyReducers'
 import OneSignal from 'react-native-onesignal';
 import MapAdvance from './source/screens/MapAdvance'
+import MyWebView from './source/screens/MyWebView'
 
 export default class App extends Component {
 
@@ -28,10 +29,12 @@ export default class App extends Component {
 
         <View style={{ flex: 1 }}>
           {/* <Create ref={ref => this.createRef = ref} /> */}
-          <MapScreen />
+          {/* <MapScreen /> */}
           {/* <Create /> */}
 
           {/* <MapAdvance /> */}
+
+          <MyWebView />
 
         </View>
       </Provider>

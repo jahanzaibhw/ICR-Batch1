@@ -20,6 +20,7 @@
     "react-native-maps": "^0.28.0",
     "react-native-onesignal": "^4.3.0",
     "react-native-permissions": "^3.0.5",
+    "react-native-webview": "^11.13.1",
     "react-redux": "^7.2.5",
     "redux": "^4.1.1"
   },
