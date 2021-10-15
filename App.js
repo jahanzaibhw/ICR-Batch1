@@ -7,6 +7,7 @@ import MyReducers from './source/data/local/reducers/MyReducers'
 import OneSignal from 'react-native-onesignal';
 import MapAdvance from './source/screens/MapAdvance'
 import MyWebView from './source/screens/MyWebView'
+import AudioTest from './source/screens/AudioTest'
 
 export default class App extends Component {
 
@@ -34,7 +35,9 @@ export default class App extends Component {
 
           {/* <MapAdvance /> */}
 
-          <MyWebView />
+          {/* <MyWebView /> */}
+
+          <AudioTest />
 
         </View>
       </Provider>
