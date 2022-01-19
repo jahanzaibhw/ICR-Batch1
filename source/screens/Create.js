@@ -11,6 +11,7 @@ import ReducersProps from '../data/local/reducers/ReducersProps'
 import ReducersActions from '../data/local/reducers/ReducersActions'
 import PrefManager from '../data/local/PrefManager'
 import PNHelper from '../utils/PNHelper'
+import CartIcon from './reuseable/CartIcon'
 
 const prefs = new PrefManager()
 class Create extends Component {
@@ -50,6 +51,8 @@ class Create extends Component {
             }}>
 
                 <View style={{ padding: 10 }}>
+
+                    <CartIcon navigation={this.props.navigation} />
 
                     <TextInput
                         style={{ ...styles.inputBG }}

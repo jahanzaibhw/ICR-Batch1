@@ -29,8 +29,8 @@ export default class MapScreen extends Component {
                         longitudeDelta: LNG_DELTA,
                     }}
                     onMapReady={() => {
-                        //this.loadCurrentLocation() 
-                        this.startTracking()
+                        this.loadCurrentLocation() 
+                        // this.startTracking()
                     }}
                 >
                     <Marker

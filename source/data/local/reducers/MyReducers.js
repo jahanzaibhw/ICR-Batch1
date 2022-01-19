@@ -15,6 +15,17 @@ const themeReducer = (state = initialThemeState, action) => {
     return state
 }
 
+const cartReducer = (state = initialThemeState, action) => {
+    switch (action.type) {
+        case ReducersConstants.UPDATE_CART_COUNTER:
+            return { counter: action.counter }
+        case ReducersConstants.RESET_CART_COUNTER:
+            return { counter: 0 }
+    }
+    return state
+}
+
+
 // const initialLangState = {
 //     language: Defaultlanguage
 // }
@@ -40,6 +51,6 @@ const themeReducer = (state = initialThemeState, action) => {
 // }
 
 // const reducers = combineReducers({ themeReducer, languageReducer, notificationsReducer })
-const reducers = combineReducers({ themeReducer })
+const reducers = combineReducers({ themeReducer, cartReducer })
 const store = createStore(reducers)
 export default store
